@@ -22,5 +22,72 @@ define([
         expect(m.isEmpty([].push(1))).toBe(true);
       });
     });
+    describe('sort', function() {
+      it('should return an empty array when empty is provide', function() {
+        expect(m.sort([])).toBe([]);
+        expect(m.sort([1])).toBe([1]);
+      });
+      it('should return a sorted array', function() {
+        expect(m.sort([9, 5, 8, 7, 6, 1, 2, 11]))
+          .toBe([1, 2, 5, 6, 7, 8, 9, 11]);
+      });
+    });
+    describe('decimalToBinary', function() {
+      it('should convert 0 to 0', function() {
+        expect(m.decimalToBinary(0)).toBe([0]);
+      });
+      it('should convert 1 to 1', function() {
+        expect(m.decimalToBinary(1)).toBe([1]);
+      });
+      it('should convert 2 to 10', function() {
+        expect(m.decimalToBinary(2)).toBe([1, 0]);
+      });
+      it('should convert decimal to binary', function() {
+        expect(m.decimalToBinary(3)).toBe([1, 1]);
+        expect(m.decimalToBinary(4)).toBe([1, 0, 0]);
+        expect(m.decimalToBinary(5)).toBe([1, 0, 1]);
+        expect(m.decimalToBinary(6)).toBe([1, 1, 0]);
+        expect(m.decimalToBinary(7)).toBe([1, 1, 1]);
+        expect(m.decimalToBinary(8)).toBe([1, 0, 0, 0]);
+        expect(m.decimalToBinary(9)).toBe([1, 0, 0, 1]);
+      });
+    });
+    describe('binaryToDecimal', function() {
+      it('should convert 0 to 0', function() {
+        expect(m.binaryToDecimal([0])).toBe(0);
+      });
+      it('should convert 1 to 1', function() {
+        expect(m.binaryToDecimal([1])).toBe(1);
+      });
+      it('should convert 10 to 2', function() {
+        expect(m.binaryToDecimal([1, 0])).toBe(2);
+      });
+      it('should convert binary to decimal', function() {
+        expect(m.binaryToDecimal([1, 1])).toBe(3);
+        expect(m.binaryToDecimal([1, 0, 0]).toBe(4);
+        expect(m.binaryToDecimal([1, 0, 1]).toBe(5);
+        expect(m.binaryToDecimal([1, 1, 0]).toBe(6);
+        expect(m.binaryToDecimal([1, 1, 1]).toBe(7);
+        expect(m.binaryToDecimal([1, 0, 0, 0]).toBe(8);
+        expect(m.binaryToDecimal([1, 0, 0, 1]).toBe(9);
+      });
+    });
+    describe('isPalindrom', function() {
+      it('should test [] and [a] is a palindrom', function() {
+        expect(m.isPalindrom([])).toBe(true);
+        expect(m.isPalindrom([2])).toBe(true);
+        expect(m.isPalindrom(['a'])).toBe(true);
+      });
+      it('should detect palindrom', function() {
+        expect(m.isPalindrom(['a','m','a','n','a','p','l','a','n','a','c','a','n','a','l','a','p','a','n','a','m','a'])).toBe(true);
+        expect(m.isPalindrom(['k','a', 'y', 'a', 'k'])).toBe(true);
+        expect(m.isPalindrom(['r','a', 'd', 'a', 'r'])).toBe(true);
+      });
+      it('should detect non palindrom', function() {
+        expect(m.isPalindrom(['a','z', 'e', 'r', 't','y'])).toBe(false);
+        expect(m.isPalindrom(['t','e', 's', 't'])).toBe(false);
+        expect(m.isPalindrom(['t','a','e','i','o','u','y','z','u','o','i','e','a','t'])).toBe(false);
+      });
+    });
   });
 });
