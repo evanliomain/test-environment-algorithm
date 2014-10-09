@@ -1,7 +1,7 @@
 {
-  "name": "algoTester",
+  "name": "test-environment-algorithm",
   "version": "1.0.0",
-  "description": "A project to test your algorithmie abilities",
+  "description": "A project to test your algorithm abilities",
   "main": "index.js",
   "authors": [
     "Evan Liomain"
