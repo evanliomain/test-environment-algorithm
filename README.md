@@ -1,7 +1,14 @@
 Test Environment Algorithm
 ==========================
 
-A project to test your algorithm abilities
+A project to test your algorithm abilities :
+
+ - test your algorithm skills in the most common problem: palindrom, sort, decimal/binary conversion, well formed expression;
+ - see test passed in real time in your browser.
+
+I wrote the tests, You code algorithm.
+
+Best way to learn the advantage of TDD: once all the test passed, then you've done!
 
 ## Prerequisites
 ### Node.js
