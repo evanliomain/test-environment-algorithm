@@ -8,7 +8,7 @@ define(function() {
      * @return {Boolean}   true if n is even, else false
      */
     isEven : function(n) {
-      return true;//0 === (n % 2);
+      return null;
     },
     /**
      * test if n is even
@@ -17,7 +17,7 @@ define(function() {
      * @return {Boolean}   true if n is even, else false
      */
     isEvenBasic : function(n) {
-      return true;//0 === (n % 2);
+      return null;
     }
   };
 });
