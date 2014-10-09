@@ -41,4 +41,4 @@ npm start
 
 
 ## How it works?
-Try to implement TODO in app/src/js and see tests passed in live in your browser.
+Try to implement TODO in app/src and see tests passed in live in your browser.
