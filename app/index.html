@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Algorithme Test Runner</title>
+
+  <link rel="shortcut icon" type="image/png" href="bower_components/jasmine/lib/jasmine-core/jasmine_favicon.png">
+  <link rel="stylesheet"    type="text/css"  href="bower_components/jasmine/lib/jasmine-core/jasmine.css">
+  <link rel="stylesheet"    type="text/css"  href="src/css/test.css">
+
+</head>
+<body>
+  <script type="text/javascript" src="bower_components/requirejs/require.js"></script>
+  <script type="text/javascript" src="require.config.js"></script>
+  <script type="text/javascript" src="test/init/require.config.js"></script>
+
+  <script>require(['main_unit'], function(main) { main(); });</script>
+
+  <script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>
