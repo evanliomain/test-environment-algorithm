@@ -357,10 +357,26 @@ expressionToTree('1')   = {value:1}
 expressionToTree('x')   = {value:'x'}
 
 **Example**  
-expressionToTree('1+8') = {operator:'+', operandLeft:{value:1}, operandRight:{value:8}}
+```
+expressionToTree('1+8') = {
+ operator     : '+',
+ operandLeft  : {value:1},
+ operandRight : {value:8}
+}
+```
 
 **Example**  
-expressionToTree('1+(2*x)') = {operator:'+', operandLeft:{value:1}, operandRight:{operator:'*', operandLeft:{value:2}, operandRight:{value:'x'}}}
+```
+expressionToTree('1+(2*x)') = {
+ operator     : '+',
+ operandLeft  : {value:1},
+ operandRight : {
+   operator     : '*',
+   operandLeft  : {value:2},
+   operandRight : {value:'x'}
+ }
+}
+```
 
 <a name="structure.module_expression..evaluateExpression"></a>
 ##expression~evaluateExpression(expression, x, y)

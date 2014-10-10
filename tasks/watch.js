@@ -3,7 +3,7 @@ module.exports = {
     files: [
       '<%= config.src_dir %>/**/*.js'
     ],
-    tasks: ['jshint:all', 'file-creator:test-require-spec']
+    tasks: ['jshint:all', 'jsdoc2md:exercice', 'file-creator:test-require-spec']
   },
   unit: {
     files: [

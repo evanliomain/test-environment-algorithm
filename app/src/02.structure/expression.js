@@ -46,8 +46,24 @@ define(function() {
      * @return {Tree}              the tree representration of the expression
      * @example expressionToTree('1')   = {value:1}
      * @example expressionToTree('x')   = {value:'x'}
-     * @example expressionToTree('1+8') = {operator:'+', operandLeft:{value:1}, operandRight:{value:8}}
-     * @example expressionToTree('1+(2*x)') = {operator:'+', operandLeft:{value:1}, operandRight:{operator:'*', operandLeft:{value:2}, operandRight:{value:'x'}}}
+     * @example ```
+     * expressionToTree('1+8') = {
+     *   operator     : '+',
+     *   operandLeft  : {value:1},
+     *   operandRight : {value:8}
+     * }
+     * ```
+     * @example ```
+     * expressionToTree('1+(2*x)') = {
+     *   operator     : '+',
+     *   operandLeft  : {value:1},
+     *   operandRight : {
+     *     operator     : '*',
+     *     operandLeft  : {value:2},
+     *     operandRight : {value:'x'}
+     *   }
+     * }
+     * ```
      * @throws {InvalidExpressionException} If expression is invalid
      */
     expressionToTree : function (expression) {

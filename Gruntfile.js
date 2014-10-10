@@ -36,6 +36,7 @@ module.exports = function(grunt) {
   grunt.initConfig(config);
 
   grunt.registerTask('unit', [
+    'jsdoc2md:exercice',
     'file-creator:test-require-spec',
     'jshint:all',
     'connect:unit',
