@@ -115,5 +115,41 @@ define([
         expect(m.residue(57823184716)).toBe(7);
       });
     });
+    describe('fibonacci', function() {
+      it('should return 1 when 0', function() {
+        expect(m.fibonacci(0)).toBe(1);
+      });
+      it('should return 1 when 1', function() {
+        expect(m.fibonacci(0)).toBe(1);
+      });
+      it('should return fibonacci(n-1) + fibonacci(n-2)', function() {
+        expect(m.fibonacci(2)).toBe(2);
+        expect(m.fibonacci(3)).toBe(3);
+        expect(m.fibonacci(4)).toBe(5);
+        expect(m.fibonacci(5)).toBe(8);
+        expect(m.fibonacci(6)).toBe(13);
+        expect(m.fibonacci(7)).toBe(21);
+        expect(m.fibonacci(8)).toBe(44);
+        expect(m.fibonacci(9)).toBe(55);
+      });
+    });
+    describe('fibonacci2', function() {
+      it('should return 1 when 0', function() {
+        expect(m.fibonacci2(0)).toBe(1);
+      });
+      it('should return 1 when 1', function() {
+        expect(m.fibonacci2(0)).toBe(1);
+      });
+      it('should return fibonacci2(n-1) + fibonacci2(n-2)', function() {
+        expect(m.fibonacci2(2)).toBe(2);
+        expect(m.fibonacci2(3)).toBe(3);
+        expect(m.fibonacci2(4)).toBe(5);
+        expect(m.fibonacci2(5)).toBe(8);
+        expect(m.fibonacci2(6)).toBe(13);
+        expect(m.fibonacci2(7)).toBe(21);
+        expect(m.fibonacci2(8)).toBe(44);
+        expect(m.fibonacci2(9)).toBe(55);
+      });
+    });
   });
 });

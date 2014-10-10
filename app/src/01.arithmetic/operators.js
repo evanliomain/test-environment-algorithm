@@ -59,6 +59,28 @@ define(function() {
     residue : function(n) {
       // TODO
       return null;
+    },
+    /**
+     * Return the n-ieme term of the fibonacci suite.
+     * Code it with just 5 lignes of code
+     * @param  {[type]} n
+     * @return {[type]}   fibonacci(n) = fibonacci(n-1) + fibonacci(n-2);
+     * fibonacci(0) = 1 ; fibonacci(1) = 1
+     */
+    fibonacci : function (n) {
+      // TODO
+      return null;
+    }
+    /**
+     * Return the n-ieme term of the fibonacci suite.
+     * Try to improve the complexity of the fibonacci implementation
+     * @param  {[type]} n
+     * @return {[type]}   fibonacci(n) = fibonacci(n-1) + fibonacci(n-2);
+     * fibonacci(0) = 1 ; fibonacci(1) = 1
+     */
+    fibonacci2 : function (n) {
+      // TODO
+      return null;
     }
   };
 });
