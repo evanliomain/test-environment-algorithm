@@ -327,7 +327,7 @@ Test if the given array of bracket is well formed
 isWellBracketed2('([]())') = true
 
 **Example**  
-isWellBracketed2('())())') = false
+isWellBracketed2('[])())') = false
 
 <a name="structure.module_expression..isValidExpression"></a>
 ##expression~isValidExpression(expression)
@@ -390,4 +390,4 @@ Evaluate an expression
 
 **Scope**: inner function of [expression](#structure.module_expression)  
 **Type**: `InvalidExpressionException`  
-**Returns**: `Boolean` - the result of the compute of the expression  
+**Returns**: `integer` - the result of the compute of the expression  

@@ -23,7 +23,7 @@ define(function() {
      * @param  {string} a an array with just (, ), [, ] symbole
      * @return {Boolean} true if it's well bracketed
      * @example isWellBracketed2('([]())') = true
-     * @example isWellBracketed2('())())') = false
+     * @example isWellBracketed2('[])())') = false
      *
      */
     isWellBracketed2 : function(a) {
@@ -76,7 +76,7 @@ define(function() {
      * @param  {string}  expression a string representing an expression with symbole (,),+,-,/,*,{integer}
      * @param  {integer} x          the x value
      * @param  {integer} y          the y value
-     * @return {Boolean}            the result of the compute of the expression
+     * @return {integer}            the result of the compute of the expression
      * @throws {InvalidExpressionException} If expression is invalid
      */
     evaluateExpression : function (expression, x, y) {
