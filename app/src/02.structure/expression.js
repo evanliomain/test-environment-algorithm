@@ -1,3 +1,4 @@
+/** @module structure.expression */
 define(function() {
   'use strict';
   var InvalidExpressionException = function(index) {

@@ -1,17 +1,17 @@
 {
-  "name"       : "test-environment-algorithm",
-  "version"    : "1.0.0",
+  "name": "test-environment-algorithm",
+  "version": "1.0.0",
   "description": "A project to test your algorithm abilities",
   "repository": {
     "type": "git",
-    "url" : "https://github.com/evanliomain/test-environment-algorithm"
-    },
-  "scripts": {
-    "start"      : "grunt unit",
-    "postinstall": "bower install",
-    "postupdate" : "bower update"
+    "url": "https://github.com/evanliomain/test-environment-algorithm"
   },
-  "author" : "Evan Liomain",
+  "scripts": {
+    "start": "grunt unit",
+    "postinstall": "bower install",
+    "postupdate": "bower update"
+  },
+  "author": "Evan Liomain",
   "license": "MIT",
   "devDependencies": {
     "glob": "^4.0.6",
@@ -21,6 +21,7 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-file-creator": "^0.1.2",
+    "grunt-jsdoc-to-markdown": "^0.4.2",
     "matchdep": "^0.3.0",
     "moment": "^2.8.3"
   }

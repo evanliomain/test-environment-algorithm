@@ -1,3 +1,4 @@
+/** @module arithmetic.test */
 define(function() {
   'use strict';
   return {

@@ -1,3 +1,4 @@
+/** @module structure.array */
 define(function() {
   'use strict';
   return {
@@ -34,7 +35,7 @@ define(function() {
     },
     /**
      * Convert an array of 0, 1 into a integer
-     * @param  {Array of 0,1} a
+     * @param  {Array} a just contain a suite of 0 and 1
      * @return {integer}  the representation in decimal form
      */
     binaryToDecimal : function(a) {
