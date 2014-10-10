@@ -64,13 +64,14 @@ define([
       });
       it('should convert binary to decimal', function() {
         expect(m.binaryToDecimal([1, 1])).toBe(3);
-        expect(m.binaryToDecimal([1, 0, 0]).toBe(4);
-        expect(m.binaryToDecimal([1, 0, 1]).toBe(5);
-        expect(m.binaryToDecimal([1, 1, 0]).toBe(6);
-        expect(m.binaryToDecimal([1, 1, 1]).toBe(7);
-        expect(m.binaryToDecimal([1, 0, 0, 0]).toBe(8);
-        expect(m.binaryToDecimal([1, 0, 0, 1]).toBe(9);
+        expect(m.binaryToDecimal([1, 0, 0])).toBe(4);
+        expect(m.binaryToDecimal([1, 0, 1])).toBe(5);
+        expect(m.binaryToDecimal([1, 1, 0])).toBe(6);
+        expect(m.binaryToDecimal([1, 1, 1])).toBe(7);
+        expect(m.binaryToDecimal([1, 0, 0, 0])).toBe(8);
+        expect(m.binaryToDecimal([1, 0, 0, 1])).toBe(9);
       });
+
     });
     describe('isPalindrom', function() {
       it('should test [] and [a] is a palindrom', function() {
@@ -87,6 +88,23 @@ define([
         expect(m.isPalindrom(['a','z', 'e', 'r', 't','y'])).toBe(false);
         expect(m.isPalindrom(['t','e', 's', 't'])).toBe(false);
         expect(m.isPalindrom(['t','a','e','i','o','u','y','z','u','o','i','e','a','t'])).toBe(false);
+      });
+    });
+    describe('reverse', function() {
+      it('should reverse empty array with empty array', function() {
+        expect(m.reverse([])).toBe([]);
+      });
+      it('should reverse 1 item array with 1 item array', function() {
+        expect(m.reverse([1])).toBe([1]);
+        expect(m.reverse([2])).toBe([2]);
+      });
+      it('should reverse 2 item array with 2 item array', function() {
+        expect(m.reverse([1, 2])).toBe([2, 1]);
+        expect(m.reverse([87, 56])).toBe([56, 87]);
+      });
+      it('should reverse an array', function() {
+        expect(m.reverse([1,2,3,4,5,6,7,8,9,10])).toBe([10,9,8,7,6,5,4,3,2,1]);
+        expect(m.reverse([87,56,45,697,3544132,257])).toBe([257,3544132,697,45, 56, 87]);
       });
     });
   });

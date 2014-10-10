@@ -28,7 +28,6 @@ define(function() {
       // TODO
       return null;
     },
-
     decimalToBinary : function(n) {
       // TODO
       return null;
@@ -49,6 +48,15 @@ define(function() {
      * @return {Boolean}  true if a is a palindrom, false else
      */
     isPalindrom : function(a) {
+      // TODO
+      return null;
+    },
+    /**
+     * Reverse the item order of the array
+     * @param  {Array} a
+     * @return {Array}   a new array with the reverse order of a
+     */
+    reverse : function(a) {
       // TODO
       return null;
     }

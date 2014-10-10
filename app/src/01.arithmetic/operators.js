@@ -70,7 +70,7 @@ define(function() {
     fibonacci : function (n) {
       // TODO
       return null;
-    }
+    },
     /**
      * Return the n-ieme term of the fibonacci suite.
      * Try to improve the complexity of the fibonacci implementation
