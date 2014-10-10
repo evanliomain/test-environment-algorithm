@@ -151,5 +151,31 @@ define([
         expect(m.fibonacci2(9)).toBe(55);
       });
     });
+    describe('ackermann', function() {
+      it('should return ackermann(m, n)', function() {
+        expect(m.ackermann(0,     1)).toBe();
+        expect(m.ackermann(1,     2)).toBe();
+        expect(m.ackermann(2,     3)).toBe();
+        expect(m.ackermann(3,     5)).toBe();
+        expect(m.ackermann(4,    13)).toBe();
+        expect(m.ackermann(5, 65533)).toBe();
+        expect(m.ackermann(1,     2)).toBe();
+        expect(m.ackermann(1,     3)).toBe();
+        expect(m.ackermann(1,     5)).toBe();
+        expect(m.ackermann(1,    13)).toBe();
+        expect(m.ackermann(2,     3)).toBe();
+        expect(m.ackermann(2,     4)).toBe();
+        expect(m.ackermann(2,     7)).toBe();
+        expect(m.ackermann(2,    29)).toBe();
+        expect(m.ackermann(3,     4)).toBe();
+        expect(m.ackermann(3,     5)).toBe();
+        expect(m.ackermann(3,     9)).toBe();
+        expect(m.ackermann(3,    61)).toBe();
+        expect(m.ackermann(4,     5)).toBe();
+        expect(m.ackermann(4,     6)).toBe();
+        expect(m.ackermann(4,    11)).toBe();
+        expect(m.ackermann(4,   125)).toBe();
+      });
+    });
   });
 });

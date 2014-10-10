@@ -74,11 +74,24 @@ define(function() {
     /**
      * Return the n-ieme term of the fibonacci suite.
      * Try to improve the complexity of the fibonacci implementation
-     * @param  {[type]} n
-     * @return {[type]}   fibonacci(n) = fibonacci(n-1) + fibonacci(n-2);
+     * @param  {integer} n
+     * @return {integer}   fibonacci(n) = fibonacci(n-1) + fibonacci(n-2);
      * fibonacci(0) = 1 ; fibonacci(1) = 1
      */
     fibonacci2 : function (n) {
+      // TODO
+      return null;
+    },
+    /**
+     * Return the result of the ackerman function;
+     * @param  {integer} m
+     * @param  {integer} n
+     * @return {integer}   ackermann(m, n) =
+     * - if m = 0 : n + 1
+     * - if 0 < m and n = 0 : ackermann(m - 1, 1)
+     * - if 0 < m and 0 v n : ackermann(m - 1, ackermann(m, n - 1))
+     */
+    ackermann : function (m, n) {
       // TODO
       return null;
     }
